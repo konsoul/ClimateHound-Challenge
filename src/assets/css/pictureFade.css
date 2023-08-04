@@ -1,0 +1,25 @@
+.showHorse {
+  animation: fadeIn 5s;
+}
+
+.showRoad {
+  animation: fadeIn 5s;
+}
+
+.hidePicture {
+  display: none;
+}
+
+.photo {
+  width: 250px;
+  border-radius: 8px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
