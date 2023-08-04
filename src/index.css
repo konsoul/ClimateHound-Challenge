@@ -63,6 +63,16 @@ button:focus-visible {
   }
 }
 
+@media (max-width: 480px) {
+  .bg-body-tertiary {
+    filter: drop-shadow(0 0 0.75rem rgb(3, 0, 1));
+  }
+}
+
+.mb-3 {
+  margin-top: 25px;
+}
+
 .container {
   display: flex;
   justify-content: center;
