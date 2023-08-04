@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import Button from 'react-bootstrap/Button'
-import Header from './Header'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import InputGroup from 'react-bootstrap/InputGroup'
 import Form from 'react-bootstrap/Form'
+import InputGroup from 'react-bootstrap/InputGroup'
+import Header from './Header'
 import Picture from './Picture'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function FaderButton() {
   const [buttonOneCount, setButtonOneCount] = useState(0)
@@ -15,8 +15,8 @@ function FaderButton() {
   console.log(threshold)
 
   const thresholdInput = (e) => {
-    const thresholdValue = e.target.value.toLocaleLowerCase()
-    setThreshold({ thresholdValue })
+    const thresholdNumber = parseInt(e.target.value)
+    setThreshold(thresholdNumber)
   }
 
   const buttonOneHandler = (buttonOneCount) => {
